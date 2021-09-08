@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+    <style>
+   
+.wrapper {
+  background-color: red;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+#wrap {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+/* header 윗 부분 css */
+.header {
+  width: 1000px;
+  height: 60px;
+}
+
+.navbar {
+  width: 1000px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  background-color: cadetblue;
+  padding: 10px 0px;
+}
+
+.navbar_logo {
+  font-size: 35px;
+}
+
+.navbar_menu {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  margin-left: auto;
+  font-size: 15px;
+}
+
+.navbar_menu li {
+  padding: 8px 15px;
+}
+
+.navbar_menu li:hover {
+  background-color: rosybrown;
+  border-radius: 7px;
+  border: 0px solid black;
+  border-bottom-width: 3px;
+}
+
+@media screen and (max-width: 700px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar_menu {
+    margin-left: 0;
+  }
+}
+
+/* header1 그림 부분 css */
+.header1 {
+  width: 1000px;
+  height: 200px;
+  background: lightslategrey;
+}
+/* search_part  부분 css */
+.search_part {
+  width: 1000px;
+  height: 50px;
+  background-color: rgb(216, 76, 76);
+}
+
+.search_part form.box {
+  margin-top: 4px;
+  float: right;
+}
+
+form.box input[type="text"] {
+  width: 200px;
+  border: 1px solid gray;
+  height: 27px;
+}
+
+form.box input[type="submit"] {
+  background-color: green;
+  color: white;
+  width: 55px;
+  height: 34px;
+  margin-left: -6px;
+  border: 0px solid white;
+  line-height: 2px;
+}
+
+.nav {
+  float: left;
+  width: 250px;
+  height: 1500px;
+  background: aqua;
+}
+.section {
+  float: left;
+  width: 750px;
+  height: 1500px;
+  background: blueviolet;
+}
+/* footer 부분 css */
+.footer {
+  clear: both;
+  width: 1000px;
+  height: 100px;
+  background: white;
+}
+#footer1 {
+  float: left;
+}
+#footer2 {
+  float: right;
+}
+
+        </style>
+<body>
+    <div id="wrap">
+           <!-- -------------------------    hearder 부분 - nav     ------------------------  -->
+        <div class="header">
+            <div class="navbar">
+                <div class="navbar_logo">
+                    <a href="#">NAVER</a>
+                </div>
+        
+                <div class="navbar_menu">
+                
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">LOGIN</a></li>
+                    <li><a href="#">JOIN</a></li>
+                    <li><a href="#">BOARD</a></li>
+                    <li><a href="#">COMMENT</a></li>    
+        
+                </div>
+            </div>
+             <!-- -------------------------    hearder 부분 - 그림      ------------------------  -->
+            <div class="header1"> header1</div>
+              <!-- -------------------------    hearder 부분 - 검색      ------------------------  -->
+            <div class="search_part">
+         
+                      <form action="" method="" class="box">
+                            <label >
+                                <input type="text" id ="input_text">
+                                <input type="submit" value="검색" id= "input_submit">    
+                            </label>
+                      </form>
+               
+            </div>
+        </div>
+                  <!-- -------------------------    nav 부분 - 시작      ------------------------  -->
+        <div class="nav">nav</div>
+              <!-- -------------------------    내용 부분 - 시작      ------------------------  -->
+        <div class="section">section</div>
+              <!-- -------------------------    하단 부분 - 시작      ------------------------  -->
+        <div class="footer">
+            <br>
+            <hr>
+            <p id="footer1">3조 프로젝트  http://www.naver.com</p>
+            <p id=footer2>naver 카페</p>
+        </div>
+  
+    
+    </div>
+
+   
+</body>
+</html>

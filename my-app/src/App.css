@@ -1,0 +1,131 @@
+.App {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  float: left;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* header 윗 부분 css */
+.header {
+  width: flex;
+  height: 60px;
+}
+
+.navbar {
+  width: flex;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  background-color: cadetblue;
+  padding: 10px 0px;
+}
+
+.navbar_logo {
+  font-size: 35px;
+}
+
+.navbar_menu {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  margin-left: auto;
+  font-size: 15px;
+}
+
+.navbar_menu li {
+  padding: 8px 15px;
+}
+
+.navbar_menu li:hover {
+  background-color: rosybrown;
+  border-radius: 7px;
+  border: 0px solid black;
+  border-bottom-width: 3px;
+}
+
+@media screen and (max-width: 700px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar_menu {
+    margin-left: 0;
+  }
+}
+
+/* header1 그림 부분 css */
+.header1 {
+  width: flex;
+  height: 200px;
+  background: lightslategrey;
+}
+/* search_part  부분 css */
+.search_part {
+  width: flex;
+  height: 50px;
+  background-color: rgb(216, 76, 76);
+}
+
+.search_part tr {
+  float: right;
+}
+
+.search_part form.box {
+  margin-top: 4px;
+  float: right;
+}
+
+form.box input[type="text"] {
+  width: 200px;
+  border: 1px solid gray;
+  height: 27px;
+}
+
+form.box input[type="submit"] {
+  background-color: green;
+  color: white;
+  width: 55px;
+  height: 34px;
+  margin-left: -6px;
+  border: 0px solid white;
+  line-height: 2px;
+}
+
+.nav {
+  float: left;
+  width: 250px;
+  height: flex;
+  min-height: 950px;
+  background: aqua;
+}
+.section {
+  display: flex;
+  width: flex;
+  height: flex;
+  min-height: 950px;
+  background: blueviolet;
+}
+/* footer 부분 css */
+.footer {
+  clear: both;
+  margin-top: auto;
+  width: flex;
+  height: 100px;
+  background: white;
+}
+#footer1 {
+  float: left;
+}
+#footer2 {
+  float: right;
+}
